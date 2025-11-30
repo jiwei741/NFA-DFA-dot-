@@ -1,0 +1,60 @@
+{
+  "states": [
+    "D0",
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+  ],
+  "alphabet": [
+    "a",
+    "b"
+  ],
+  "start": "D0",
+  "accepts": [
+    "D3",
+    "D4"
+  ],
+  "transitions": [
+    {
+      "from": "D0",
+      "symbol": "a",
+      "to": "D2"
+    },
+    {
+      "from": "D0",
+      "symbol": "b",
+      "to": "D1"
+    },
+    {
+      "from": "D1",
+      "symbol": "b",
+      "to": "D3"
+    },
+    {
+      "from": "D2",
+      "symbol": "a",
+      "to": "D4"
+    },
+    {
+      "from": "D3",
+      "symbol": "a",
+      "to": "D3"
+    },
+    {
+      "from": "D3",
+      "symbol": "b",
+      "to": "D3"
+    },
+    {
+      "from": "D4",
+      "symbol": "a",
+      "to": "D4"
+    },
+    {
+      "from": "D4",
+      "symbol": "b",
+      "to": "D4"
+    }
+  ]
+}
